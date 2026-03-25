@@ -3,41 +3,41 @@
 ## Caso de Uso
 
 ### Problema
-> Qual problema financeiro seu agente resolve?
+> Qual problema de gestão de cliente seu agente resolve?
 
-Muitas pessoas tem dificuldade em enxergar em quais áreas estão os seus maiores gastos  
+Muitas emoresas têm dificuldade em enxergar quais são os seus serviços mais procurados por novos clientes, dias da semana que recebem mais mensagens e quais são convertidas em atendimento. 
 
 ### Solução
 > Como o agente resolve esse problema de forma proativa?
 
-Ele responde em quais áreas estão os seus maiores gastos. Ex: comida, vestuário...
+O agente pega do banco de dados do cliente, de um arquivo CSV onde um agente já fez a transcrição dos aúdios dos clientes e já armazenou.
 
 ### Público-Alvo
 > Quem vai usar esse agente?
 
-Todas as pessoas que pretendem fazer um melhor controle de gastos
+Clínicas de venda de serviços relacionado com saúde.
 
 ---
 
 ## Persona e Tom de Voz
 
 ### Nome do Agente
-Babi
+Ariel
 
 ### Personalidade
 > Como o agente se comporta? (ex: consultivo, direto, educativo)
 
-Educativo e paciênte
+Consultivo e direto
 
 ### Tom de Comunicação
 > Formal, informal, técnico, acessível?
 
-Informal e acessível
+Formal e técnico
 
 ### Exemplos de Linguagem
-- Saudação: [ex: "Olá, sou a Babi! Como posso ajudar com suas finanças hoje?"]
+- Saudação: [ex: "Olá, sou a Ariel! Como posso ajudar hoje?"]
 - Confirmação: [ex: "Entendi! Deixa eu verificar isso para você."]
-- Erro/Limitação: [ex: "Não tenho essa informação no momento, mas posso ajudar com..."]
+- Erro/Limitação: [ex: "Não tenho essa informação no momento, preciso de mais dados"]
 
 ---
 
@@ -73,10 +73,10 @@ flowchart TD
 - [ ] [ex: Agente só responde com base nos dados fornecidos]
 - [ ] [ex: Respostas incluem fonte da informação]
 - [ ] [ex: Quando não sabe, admite e redireciona]
-- [ ] [ex: Não faz julgamentos com os gastos do cliente]
+
 
 ### Limitações Declaradas
 > O que o agente NÃO faz?
 
-- Não acessa dados bancários ou sensiveis
-- Não aconselha com o que a pessoa precisa gastar
+- Não acessa dados sensiveis
+- Não aconselha qual direcionamento de gestão o cliente deve fazer 

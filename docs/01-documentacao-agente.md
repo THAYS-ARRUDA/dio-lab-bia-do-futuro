@@ -5,7 +5,7 @@
 ### Problema
 > Qual problema de gestão de cliente seu agente resolve?
 
-Muitas emoresas têm dificuldade em enxergar quais são os seus serviços mais procurados por novos clientes, dias da semana que recebem mais mensagens e quais são convertidas em atendimento. 
+Muitas empresas têm dificuldade em enxergar quais são os seus serviços mais procurados por novos clientes, dias da semana que recebem mais mensagens e quais são convertidas em atendimento. 
 
 ### Solução
 > Como o agente resolve esse problema de forma proativa?

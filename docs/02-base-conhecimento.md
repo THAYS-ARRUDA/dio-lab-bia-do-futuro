@@ -35,10 +35,15 @@ df = pd.read_csv('seu_arquivo.csv')
 ### Como os dados são usados no prompt?
 > Os dados vão no system prompt? São consultados dinamicamente?
 
-```text
-HISTÓRICO DE CONVERSAS
+```python
+#HISTÓRICO DE CONVERSAS
+def historico():
+df_historico = pd.read_csv('historico_conversas.csv')
 
-DADIS DE TRIAGEM:
+#DADOS DE TRIAGEM:
+df_dados_triagem = pd.read_csv('dados_triagem.csv')
+
+return df_historico, df_dados_triagem
 
 ```
 ---
@@ -48,13 +53,10 @@ DADIS DE TRIAGEM:
 > Mostre um exemplo de como os dados são formatados para o agente.
 
 ```
-Dados do Cliente:
-- Nome: João Silva
-- Perfil: Moderado
-- Saldo disponível: R$ 5.000
-
-Últimas transações:
-- 01/11: Supermercado - R$ 450
-- 03/11: Streaming - R$ 55
+DADOS DE TRIAGEM:
+- Data e hora: 2026-03-24 08:30:00
+- Relato: Sinto muita dor no calcanhar ao pisar logo cedo
+- Palavras-chave: dor e calcanhar
+- Urgência: Média
 ...
 ```

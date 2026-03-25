@@ -6,13 +6,8 @@ Descreva se usou os arquivos da pasta `data`, por exemplo:
 
 | Arquivo | Formato | Utilização no Agente |
 |---------|---------|---------------------|
-| `historico_atendimento.csv` | CSV | Contextualizar interações anteriores |
-| `perfil_investidor.json` | JSON | Personalizar recomendações |
-| `produtos_financeiros.json` | JSON | Sugerir produtos adequados ao perfil |
-| `transacoes.csv` | CSV | Analisar padrão de gastos do cliente |
-
-> [!TIP]
-> **Quer um dataset mais robusto?** Você pode utilizar datasets públicos do [Hugging Face](https://huggingface.co/datasets) relacionados a finanças, desde que sejam adequados ao contexto do desafio.
+| `historico_conversas.csv` | CSV | Contextualizar interações anteriores |
+| `dados_triagem.csv` | CSV | Verificar dados e usar as informações para passar para o cliente |
 
 ---
 
@@ -20,7 +15,7 @@ Descreva se usou os arquivos da pasta `data`, por exemplo:
 
 > Você modificou ou expandiu os dados mockados? Descreva aqui.
 
-[Sua descrição aqui]
+Por ter alterado o tipo de agente de financeiro para um que auxilia a gestão de serviços eu não utilizei os dados
 
 ---
 
@@ -29,13 +24,23 @@ Descreva se usou os arquivos da pasta `data`, por exemplo:
 ### Como os dados são carregados?
 > Descreva como seu agente acessa a base de conhecimento.
 
-[ex: Os JSON/CSV são carregados no início da sessão e incluídos no contexto do prompt]
+CSV são carregados no início da sessão e incluídos no contexto do prompt via código, o panda
+
+```python
+import pandas as pd
+df = pd.read_csv('seu_arquivo.csv')
+```
+
 
 ### Como os dados são usados no prompt?
 > Os dados vão no system prompt? São consultados dinamicamente?
 
-[Sua descrição aqui]
+```text
+HISTÓRICO DE CONVERSAS
 
+DADIS DE TRIAGEM:
+
+```
 ---
 
 ## Exemplo de Contexto Montado
